@@ -1,0 +1,216 @@
+/* === Base styles === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f8ff;
+  color: #1a1a1a;
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(to right, #003366, #0059b3);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #cce6ff;
+}
+
+/* === Navigation === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #d1e0ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #80d4ff;
+  text-decoration: underline;
+}
+
+.intro h2, p{
+  color: #0066cc;
+}
+
+.profile-photo h2{
+  color: #0066cc;
+}
+
+.navigation-links h2{
+  color: #0066cc;
+}
+
+.about h2, li{
+  color: #0066cc;
+}
+
+.skills h2{
+  color: #0066cc;
+}
+
+.projects h2{
+  color: #0066cc;
+}
+
+.contact h2{
+  color: #0066cc;
+}
+
+/* === Sections === */
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: url('portfolio_background.jpeg') no-repeat center center/cover;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  border-bottom: 2px solid #80d4ff;
+  margin-bottom: 1rem;
+}
+
+/* === Profile Photo === */
+.profile-pic {
+  width: 300px;
+  height: 280px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* === Projects === */
+.project {
+  background: rgba(0, 0, 51, 0.7);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project h3 {
+  color: #99ccff;
+  margin-top: 0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #0066cc;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project a:hover {
+  background-color: #004c99;
+  transform: translateY(-2px);
+}
+
+/* === Buttons === */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0059b3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #003d80;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* === Lists === */
+ul {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+/* === Footer === */
+footer {
+  background-color: #003366;
+  color: #d1e0ff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* === Responsive Navigation === */
+.mobile-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.contact i {
+  font-size: 3rem; /* Increase as needed (e.g., 2.5rem, 3rem) */
+  vertical-align: middle;
+  margin-left: 8px;
+  color: #333; /* Optional: adjust color */
+  transition: transform 0.2s ease;
+}
+
+.contact i:hover {
+  transform: scale(1.2); /* Optional: slight zoom on hover */
+  color: #0077b5; /* Optional: LinkedIn blue or your preferred hover color */
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
